@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="big">
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a class="about" href="/">About</a></li>
+                    <li><a class="services" href="/">Services</a></li>
+                    <li><a class="contactHeader" href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- For smartphone  -->
+        <nav class="small">
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <i id="toggle" style="font-size: 2rem;" class='bx bx-menu'></i>
+            </div>
+        </nav>
+        <div class="responsiveNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a id="about" href="/">About</a></li>
+                <li><a id="services" href="/">Services</a></li>
+                <li><a id="contactHeader" href="/">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi, I am <span>Asad</span>
+                <div>And I am a Spirited</div>
+                <div>Frontend Web Developer</div>
+                <div class="auto">OF <span id="element"></span></div>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="">
+            </div>
+        </section>
+        <hr>
+    </main>
+
+    <section class="section2">
+        <div class="img">
+            <img src="about.png" alt="">
+        </div>
+        <div class="about">
+            <h6 class="head">About Me</h6>
+            <div>Hello! This is Asad, a passionate frontend developer ready to bring your project to life. I specialize
+                in translating ideas into visually stunning and highly functional websites as well as applications.
+                <br> <br>
+                What sets me apart, is my commitment to understanding your unique goals and user needs. By combining
+                creativity with strategic thinking, I ensure that every line of code serves a purpose, driving
+                engagement and delivering results. Whether you're looking to revamp your existing frontend or create
+                something entirely new, I'm here to collaborate closely with you every step of the way.
+            </div>
+        </div>
+    </section>
+    <hr class="hr">
+
+
+    <section class="section3">
+        <div class="service">
+            <h6>Services</h6>
+            <p>I’m an expert at designing beautiful and responsive web solutions. I’m passionate about bringing your
+                ideas to life with smooth functionality and eye-catching design. Let’s work together to create digital
+                experiences you’ll never forget.</p>
+            <i style="color: rgb(255, 39, 1);" class='bx bxl-html5'></i>
+            <i style="color: rgb(0, 81, 255);" class='bx bxl-css3'></i>
+            <i style="color: yellow;" class='bx bxl-javascript'></i>
+            <i style="color: rgb(0, 255, 255);" class='bx bxl-tailwind-css'></i>
+            <i style="color: rgb(0, 255, 255);" class='bx bxl-react'></i>
+        </div>
+        <hr class="hr2">
+        <div class="contact">
+            <h6>Contact</h6>
+            <p>Let's work together to turn your vision into reality and create an online presence that leaves a lasting
+                impression. Get in touch today, and let's build something extraordinary together!</p>
+            <i id="whatsapp" style="color: rgb(1, 189, 1);" class='bx bxl-whatsapp'></i>
+            <i id="skype" style="color: rgb(109, 204, 241);" class='bx bxl-skype'></i>
+            <i id="mail" style="color: rgb(248, 94, 94);" class='bx bxl-gmail'></i>
+            <br>
+            <span>Click to get</span> <br>
+            <span id="info"> </span>
+        </div>
+    </section>
+
+    <div class="scrollTop"><i id="top" class='bx bx-down-arrow-circle bx-flip-vertical'></i></div>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [
+                'Building beautiful, responsive experiences',
+                'Crafting pixel-perfect user interfaces',
+                'Turning ideas into interactive websites'
+            ],
+            typeSpeed: 70,
+            loop: true,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(1, 1, 55);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: #7EC8E3;
+    font-size: 1.011rem;
+}
+.left{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+}
+.leftSection, .rightSection{
+    width: 30%;
+}
+.rightSection img{
+    width: 110%;
+}
+.leftSection{
+    font-size: 3rem;
+    margin: 8rem 0;
+}
+.leftSection div{
+    font-size: 2rem;
+}
+.leftSection .auto{
+    font-size: 1rem;
+}
+.leftSection span{
+    color: #7EC8E3;
+    font-weight: bold;
+}
+#element{
+    color: #7EC8E3;
+}
+main hr{
+    background-color: #7EC8E3;
+    margin: 4rem;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+}
+.section2 div{
+    width: 40%;
+}
+.img img{
+    margin: 4rem 0;
+    width: 70%;
+    border-radius: 50%;
+}
+.about .head{
+    color: #7EC8E3;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.about div{
+    padding: 1rem;
+    text-align: justify;
+    width: 80%;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+}
+.section3 div{
+    width: 40%;
+    /* background-color: red; */
+}
+.section3 .service, .contact{
+    padding: 2rem;
+    text-align: justify;
+}
+.section3 .service h6, .contact h6{
+    color: #7EC8E3;
+    font-size: 2rem;
+}
+.service i, .contact i{
+    font-size: 4.5rem;
+}
+.service p{
+    margin-bottom: 1.5rem;
+}
+#whatsapp, #skype, #mail{
+    cursor: pointer;
+}
+#info{
+    border: 1px solid white;
+    cursor: pointer;
+}
+.scrollTop {
+    font-size: 4rem;
+}
+.scrollTop i{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+.scrollTop i:hover{
+    color: #7EC8E3;
+    cursor: pointer;
+}
+.responsiveNav{
+    display: flex;
+    justify-content: center;
+}
+.responsiveNav ul{
+    width: 80%;
+    background-color: #7EC8E3;
+    position: absolute;
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.responsiveNav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.5rem;
+}
+.responsiveNav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.responsiveNav.open ul{
+    height: 175px;
+    padding: 0.25rem;
+}
+
+.small{
+    display: none;
+}
+
+.hr{
+    background-color: #7EC8E3; 
+    margin: 4rem;
+}
+
+/* Media and reponsibile code  */
+
+@media only screen and (min-width:767px) and (max-width:991px){
+    .leftSection, .rightSection{
+        width: 45%
+    }
+    .rightSection img{
+        width: 100%;
+    }
+    .leftSection div{
+        font-size: 1.5rem;
+    }
+    .leftSection{
+        font-size: 2.5rem;
+        margin: 5rem 0;
+    }
+    .section2 div{
+        width: 48%;
+    }
+    .about .head{
+        font-size: 1.5rem;
+    }
+    .about div{
+        padding: .5rem 0;
+        width: 90%;
+    }
+    #info{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .hello{
+        background-color: green;
+    }
+    .big{
+        display: none;
+    }
+    .small{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .first{
+        display: block;
+    }
+    .leftSection, .rightSection{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .leftSection div{
+        font-size: 1.5rem;
+    }
+    .leftSection{
+        font-size: 2.5rem;
+        padding: 3rem 0 0 0;
+        height: 10rem;
+    }
+    .rightSection img{
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    main hr{
+        margin: 2rem;
+    }
+    .section2{
+        display: block;
+    }
+    .section2 div, .section2 h6{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+    .about .head{
+        padding: 0 1rem;
+    }
+    .section3{
+        display: block;
+    }
+    .section3 div{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hr{
+        margin: 1.5rem;
+    }
+    .hr2{
+        margin: 0 1.5rem;
+    }
+    #info{
+        font-size: 15px;
+    }
+}
